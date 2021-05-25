@@ -7,36 +7,44 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-
+    <script src="./script/script.js"></script>
 </head>
 <body>
+
+
     <header> 
         <div class="head_link_box">
             <a href=""><div class="head_link cat1"><p>Кто Я</p></div></a>
             <a href=""><div class="head_link cat2"><p>Что Я создаю</p></div></a>
             <a href=""><div class="head_link cat3"><p>Прайс</p></div></a>
-            
             <!-- <a href=""><div class="head_link"></div></a> -->
-            
         </div>
     </header>
+
     <main>
         <div class="block__wrapper">
-            <div class="block"> 
-                <div class="image_box">
+            <div class="block" onclick="show_photo('./img/ITSM.png')"> 
+                <div class="image_box" style="background-image: url('./img/ITSM.png')">
                     <div class="text_box">
                         <p class='article_header'>Заголовок</p>
                         <p class='article_main'>Основной текст</p>
                     </div>
                 </div>
             </div>
-
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
+            <div class="block" onclick="show_photo('./img/ITSM.png')"> 
+                <div class="image_box" style="background-image: url('./img/ITSM.png')">
+                    <div class="text_box">
+                        <p class='article_header'>Заголовок</p>
+                        <p class='article_main'>Основной текст</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
+        <div class="photo_container" onclick="hide_photo()">
+            <div class="photo_back"></div>
+            <img class="photo" src="" alt="">
+        </div>
     </main>
     
     <footer>
@@ -46,6 +54,7 @@
         
     </footer>
 
+    
 
 </body>
 </html>
