@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <script src="./script/script.js"></script>
+</head>
+<body>
+
+
+    <header> 
+        <div class="head_link_box">
+            <a href="file:///C:/Users/ilyak/Desktop/totoro-project/aboutme.html"><div class="head_link cat1"><p>Кто я</p></div></a>
+            <a href="file:///C:/Users/ilyak/Desktop/totoro-project/mywork.html"><div class="head_link cat2"><p>Что я создаю</p></div></a>
+            <a href="file:///C:/Users/ilyak/Desktop/totoro-project/price.html"><div class="head_link cat3" style="background-color: #ffc8a3"><p>Прайс</p></div></a>
+            <!-- <a href=""><div class="head_link"></div></a> -->
+        </div>
+    </header>
+
+    <main>
+        <div class="block__wrapper">
+            <div class="block" onclick="show_photo('./img/ITSM.png')"> 
+                <div class="image_box" style="background-image: url('./img/ITSM.png')">
+                    <div class="text_box">
+                        <p class='article_header'>Заголовок</p>
+                        <p class='article_main'>Основной текст</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block" onclick="show_photo('./img/ITSM.png')"> 
+                <div class="image_box" style="background-image: url('./img/ITSM.png')">
+                    <div class="text_box">
+                        <p class='article_header'>Заголовок</p>
+                        <p class='article_main'>Основной текст</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo_container" onclick="hide_photo()">
+            <div class="photo_back"></div>
+            <img class="photo" src="" alt="">
+        </div>
+    </main>
+    
+    <footer>
+    <div class="footer_items">
+        <h1 class="footer_text">Спасибо, что посетили мой сайт!</h1>
+    </div>
+        
+    </footer>
+
+    
+
+</body>
+</html>
